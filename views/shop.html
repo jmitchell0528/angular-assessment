@@ -6,6 +6,18 @@
 <div class="product-grid__item   grid__item one-half large--one-third" >
 
     <!--Repeat over your data and display it below -->
+  <div ng-repeat="product in products">
+    <div class="image-container">
+      <img ng-src="{{ product.image }}" alt="">
+    </div>
+    <div>
+      <h2> {{ product.title }} </h2>
+      <br>
+      <p> {{ product.desc }} </p>
+      <br>
+      <h6> ${{ product.price }} </h6>
+      <br>
+    </div>
+  </div>
 
-    
 </div>
